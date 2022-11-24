@@ -38,8 +38,24 @@
 </div>
 -->
 
-<p-carousel [value]="plantas" [autoplayInterval]="3000" [circular]="true">
+<p-carousel [value]="plantas" [autoplayInterval]="3000" [circular]="true" [numVisible]="5">
     <ng-template let-planta pTemplate="item">
-        <h1>{{planta.nombre}}</h1>
+        <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <div class="card " style="width:200px;">
+                      <div class="card-img" ><img src="{{planta.imagen}}" alt="" style="width: 100%;height: 180px;"></div>
+                      <div class="card-info">
+                        <p class="text-title mt-2">{{planta.nombre}}</p>
+                        <p class="text-body mt-1">{{planta.descripcion}}</p>
+                      </div>
+                      <div class="card-footer">
+                      <span class="text-title">{{planta.precio}}</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+        </div>
     </ng-template>
 </p-carousel>
