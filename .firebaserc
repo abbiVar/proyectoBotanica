@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "botanica-558ac": {
+      "hosting": {
+        "botanicaa": [
+          "botanica-558ac"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "botanica-558ac"
+  }
+}

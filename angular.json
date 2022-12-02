@@ -94,8 +94,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "botanicaa:build:production",
+            "firebaseProject": "botanica-558ac",
+            "firebaseHostingSite": "botanica-558ac"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "bf5846a1-b822-4896-aa9e-cbd38fc49e34"
   }
 }
